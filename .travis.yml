@@ -1,0 +1,17 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker login -u $ARTIFACT_REGISTRY_USERNAME -p $ARTIFACT_REGISTRY_PASSWORD
+
+script:
+  - docker build -t rbobrovnikov/toolbox:latest .
+
+deploy:
+  - provider: script
+    script: docker push rbobrovnikov/toolbox:latest
+    skip_cleanup: true
+    on:
+      all_branches: true
