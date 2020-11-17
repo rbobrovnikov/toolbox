@@ -1,6 +1,6 @@
 FROM alpine:latest
 LABEL author="Ruslan Bobrovnikov <ruslan.bobrovnikov@gmail.com>"
-
+#
 ARG KUBECTL_VERSION=1.19.4
 
 RUN apk add --update --no-cache openssl curl jq bash bash-completion openssh-client
