@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL author="Ruslan Bobrovnikov <ruslan.bobrovnikov@gmail.com>""
+LABEL author="Ruslan Bobrovnikov <ruslan.bobrovnikov@gmail.com>"
 
 ARG KUBECTL_VERSION=1.19.4
 
