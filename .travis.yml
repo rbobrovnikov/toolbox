@@ -11,7 +11,7 @@ script:
 
 deploy:
   - provider: script
-    script: docker push rbobrovnikov/toolbox:latest
+    script: docker push rbobrovnikov/toolbox-root:latest
     skip_cleanup: true
     on:
       all_branches: true
