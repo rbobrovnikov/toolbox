@@ -8,3 +8,7 @@ Contains some useful utilities, cli, shells, etc:
 * kubectl
 * bash
 * bash-completion
+* openssh-client
+* postgresql-client
+* bind-tools
+* mongodb
